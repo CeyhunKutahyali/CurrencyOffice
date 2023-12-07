@@ -121,10 +121,10 @@ namespace ExchangeOffice
                 double rate = Convert.ToDouble(txtRate.Text);
                 int quantity = Convert.ToInt32(txtQuantity.Text);
                 int price = Convert.ToInt32(quantity / rate);
-                txtPrice.Text = price.ToString();
+                txtPrice.Text = price.ToString("0.00");
                 double remaining;
                 remaining = quantity % rate;
-                txtRemaining.Text = remaining.ToString();
+                txtRemaining.Text = remaining.ToString("0.00");
 
 
                 double numberFromTLLabel;
@@ -139,14 +139,14 @@ namespace ExchangeOffice
                 if (double.TryParse(lblTL.Text, out numberFromTLLabel))
                 {
                     double resultTL = numberFromTLLabel + Convert.ToDouble(txtQuantity.Text) - Convert.ToDouble(txtRemaining.Text);
-                    lblTL.Text = resultTL.ToString();
+                    lblTL.Text = resultTL.ToString("0.00");
                 }
 
                 if (double.TryParse(lblUSD.Text, out numberFromUSDLabel) &&
                     double.TryParse(txtPrice.Text, out numberFromPriceTextBox))
                 {
                     double resultUSD = numberFromUSDLabel - numberFromPriceTextBox; 
-                    lblUSD.Text = resultUSD.ToString();
+                    lblUSD.Text = resultUSD.ToString("0.00");
                 }
                 MessageBox.Show("Kasa Bilgileri Güncellendi");
                 DataClear();
@@ -164,10 +164,10 @@ namespace ExchangeOffice
                 double rate = Convert.ToDouble(txtRate.Text);
                 int quantity = Convert.ToInt32(txtQuantity.Text);
                 int price = Convert.ToInt32(quantity / rate);
-                txtPrice.Text = price.ToString();
+                txtPrice.Text = price.ToString("0.00");
                 double remaining;
                 remaining = quantity % rate;
-                txtRemaining.Text = remaining.ToString();
+                txtRemaining.Text = remaining.ToString("0.00");
 
                 double numberFromTLLabel;
                 double numberFromEURLabel;
@@ -181,14 +181,14 @@ namespace ExchangeOffice
                 if (double.TryParse(lblTL.Text, out numberFromTLLabel))
                 {
                     double resultTL = numberFromTLLabel + Convert.ToDouble(txtQuantity.Text) - Convert.ToDouble(txtRemaining.Text);
-                    lblTL.Text = resultTL.ToString();
+                    lblTL.Text = resultTL.ToString("0.00");
                 }
 
                 if (double.TryParse(lblEUR.Text, out numberFromEURLabel) &&
                     double.TryParse(txtPrice.Text, out numberFromPriceTextBox))
                 {
                     double resultEUR = numberFromEURLabel - numberFromPriceTextBox;
-                    lblEUR.Text = resultEUR.ToString();
+                    lblEUR.Text = resultEUR.ToString("0.00");
                 }
                 MessageBox.Show("Kasa Bilgileri Güncellendi");
                 DataClear();
@@ -207,7 +207,7 @@ namespace ExchangeOffice
                 rate = Convert.ToDouble(txtRate.Text);
                 quantity = Convert.ToDouble(txtQuantity.Text);
                 price = rate * quantity;
-                txtPrice.Text = price.ToString();
+                txtPrice.Text = price.ToString("0.00");
 
                 double numberFromTLLabel;
                 double numberFromEURLabel;
@@ -221,14 +221,14 @@ namespace ExchangeOffice
                 if (double.TryParse(lblTL.Text, out numberFromTLLabel))
                 {
                     double resultTL = numberFromTLLabel - Convert.ToDouble(txtPrice.Text) - Convert.ToDouble(txtRemaining.Text);
-                    lblTL.Text = resultTL.ToString();
+                    lblTL.Text = resultTL.ToString("0.00");
                 }
 
                 if (double.TryParse(lblEUR.Text, out numberFromEURLabel) &&
                     double.TryParse(txtQuantity.Text, out numberFromPriceTextBox))
                 {
                     double resultEUR = numberFromEURLabel + numberFromPriceTextBox;
-                    lblEUR.Text = resultEUR.ToString();
+                    lblEUR.Text = resultEUR.ToString("0.00");
                 }
                 MessageBox.Show("Kasa Bilgileri Güncellendi");
                 DataClear();
@@ -247,7 +247,7 @@ namespace ExchangeOffice
                 rate = Convert.ToDouble(txtRate.Text);
                 quantity = Convert.ToDouble(txtQuantity.Text);
                 price = rate * quantity;
-                txtPrice.Text = price.ToString();
+                txtPrice.Text = price.ToString("0.00");
 
                 double numberFromTLLabel;
                 double numberFromUSDLabel;
@@ -261,14 +261,14 @@ namespace ExchangeOffice
                 if (double.TryParse(lblTL.Text, out numberFromTLLabel))
                 {
                     double resultTL = numberFromTLLabel - Convert.ToDouble(txtPrice.Text) - Convert.ToDouble(txtRemaining.Text);
-                    lblTL.Text = resultTL.ToString();
+                    lblTL.Text = resultTL.ToString("0.00");
                 }
 
                 if (double.TryParse(lblUSD.Text, out numberFromUSDLabel) &&
                     double.TryParse(txtQuantity.Text, out numberFromPriceTextBox))
                 {
                     double resultUSD = numberFromUSDLabel + numberFromPriceTextBox;
-                    lblUSD.Text = resultUSD.ToString();
+                    lblUSD.Text = resultUSD.ToString("0.00");
                 }
                 MessageBox.Show("Kasa Bilgileri Güncellendi");
                 DataClear();

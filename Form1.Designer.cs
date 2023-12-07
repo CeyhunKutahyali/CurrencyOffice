@@ -354,7 +354,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(152, 96);
+            this.label14.Location = new System.Drawing.Point(177, 96);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 25);
             this.label14.TabIndex = 25;
@@ -364,7 +364,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(152, 67);
+            this.label13.Location = new System.Drawing.Point(177, 67);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(58, 25);
             this.label13.TabIndex = 24;
@@ -374,7 +374,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(152, 37);
+            this.label12.Location = new System.Drawing.Point(177, 37);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 25);
             this.label12.TabIndex = 23;
