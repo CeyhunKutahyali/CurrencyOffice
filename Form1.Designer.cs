@@ -37,6 +37,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.btnTLEUR = new System.Windows.Forms.Button();
             this.btnEURTL = new System.Windows.Forms.Button();
             this.btnTLUSD = new System.Windows.Forms.Button();
@@ -54,20 +55,20 @@
             this.btnEuroSale = new System.Windows.Forms.Button();
             this.btnEuroBuy = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.lblEUR = new System.Windows.Forms.Label();
             this.lblUSD = new System.Windows.Forms.Label();
             this.lblTL = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.BtnGetRate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +77,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(40, 19);
+            this.label1.Location = new System.Drawing.Point(55, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 25);
             this.label1.TabIndex = 0;
@@ -86,7 +87,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(28, 56);
+            this.label2.Location = new System.Drawing.Point(43, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 25);
             this.label2.TabIndex = 1;
@@ -96,7 +97,7 @@
             // 
             this.lblDollarBuy.AutoSize = true;
             this.lblDollarBuy.BackColor = System.Drawing.Color.Transparent;
-            this.lblDollarBuy.Location = new System.Drawing.Point(143, 19);
+            this.lblDollarBuy.Location = new System.Drawing.Point(158, 34);
             this.lblDollarBuy.Name = "lblDollarBuy";
             this.lblDollarBuy.Size = new System.Drawing.Size(23, 25);
             this.lblDollarBuy.TabIndex = 2;
@@ -106,7 +107,7 @@
             // 
             this.lblDollarSale.AutoSize = true;
             this.lblDollarSale.BackColor = System.Drawing.Color.Transparent;
-            this.lblDollarSale.Location = new System.Drawing.Point(143, 56);
+            this.lblDollarSale.Location = new System.Drawing.Point(158, 71);
             this.lblDollarSale.Name = "lblDollarSale";
             this.lblDollarSale.Size = new System.Drawing.Size(23, 25);
             this.lblDollarSale.TabIndex = 3;
@@ -116,7 +117,7 @@
             // 
             this.lblEuroSale.AutoSize = true;
             this.lblEuroSale.BackColor = System.Drawing.Color.Transparent;
-            this.lblEuroSale.Location = new System.Drawing.Point(143, 154);
+            this.lblEuroSale.Location = new System.Drawing.Point(158, 169);
             this.lblEuroSale.Name = "lblEuroSale";
             this.lblEuroSale.Size = new System.Drawing.Size(23, 25);
             this.lblEuroSale.TabIndex = 7;
@@ -126,7 +127,7 @@
             // 
             this.lblEuroBuy.AutoSize = true;
             this.lblEuroBuy.BackColor = System.Drawing.Color.Transparent;
-            this.lblEuroBuy.Location = new System.Drawing.Point(143, 117);
+            this.lblEuroBuy.Location = new System.Drawing.Point(158, 132);
             this.lblEuroBuy.Name = "lblEuroBuy";
             this.lblEuroBuy.Size = new System.Drawing.Size(23, 25);
             this.lblEuroBuy.TabIndex = 6;
@@ -136,7 +137,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(31, 154);
+            this.label7.Location = new System.Drawing.Point(46, 169);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(113, 25);
             this.label7.TabIndex = 5;
@@ -146,7 +147,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(43, 117);
+            this.label8.Location = new System.Drawing.Point(58, 132);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 25);
             this.label8.TabIndex = 4;
@@ -154,7 +155,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnClear);
             this.groupBox1.Controls.Add(this.btnTLEUR);
             this.groupBox1.Controls.Add(this.btnEURTL);
             this.groupBox1.Controls.Add(this.btnTLUSD);
@@ -173,9 +173,19 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(12, 143);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(324, 38);
+            this.btnClear.TabIndex = 23;
+            this.btnClear.Text = "Kasa Temizle";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // btnTLEUR
             // 
-            this.btnTLEUR.Location = new System.Drawing.Point(79, 236);
+            this.btnTLEUR.Location = new System.Drawing.Point(63, 285);
             this.btnTLEUR.Name = "btnTLEUR";
             this.btnTLEUR.Size = new System.Drawing.Size(324, 38);
             this.btnTLEUR.TabIndex = 22;
@@ -185,7 +195,7 @@
             // 
             // btnEURTL
             // 
-            this.btnEURTL.Location = new System.Drawing.Point(79, 324);
+            this.btnEURTL.Location = new System.Drawing.Point(63, 373);
             this.btnEURTL.Name = "btnEURTL";
             this.btnEURTL.Size = new System.Drawing.Size(324, 38);
             this.btnEURTL.TabIndex = 21;
@@ -195,7 +205,7 @@
             // 
             // btnTLUSD
             // 
-            this.btnTLUSD.Location = new System.Drawing.Point(79, 192);
+            this.btnTLUSD.Location = new System.Drawing.Point(63, 241);
             this.btnTLUSD.Name = "btnTLUSD";
             this.btnTLUSD.Size = new System.Drawing.Size(324, 38);
             this.btnTLUSD.TabIndex = 20;
@@ -205,7 +215,7 @@
             // 
             // btnUSDTL
             // 
-            this.btnUSDTL.Location = new System.Drawing.Point(79, 280);
+            this.btnUSDTL.Location = new System.Drawing.Point(63, 329);
             this.btnUSDTL.Name = "btnUSDTL";
             this.btnUSDTL.Size = new System.Drawing.Size(324, 38);
             this.btnUSDTL.TabIndex = 13;
@@ -217,7 +227,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(21, 140);
+            this.label6.Location = new System.Drawing.Point(21, 157);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 25);
             this.label6.TabIndex = 19;
@@ -225,7 +235,7 @@
             // 
             // txtRemaining
             // 
-            this.txtRemaining.Location = new System.Drawing.Point(124, 137);
+            this.txtRemaining.Location = new System.Drawing.Point(124, 154);
             this.txtRemaining.Name = "txtRemaining";
             this.txtRemaining.Size = new System.Drawing.Size(279, 30);
             this.txtRemaining.TabIndex = 18;
@@ -234,7 +244,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(26, 104);
+            this.label5.Location = new System.Drawing.Point(26, 121);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 25);
             this.label5.TabIndex = 17;
@@ -242,7 +252,7 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(124, 101);
+            this.txtPrice.Location = new System.Drawing.Point(124, 118);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(279, 30);
             this.txtPrice.TabIndex = 16;
@@ -251,7 +261,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(19, 68);
+            this.label4.Location = new System.Drawing.Point(19, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 25);
             this.label4.TabIndex = 15;
@@ -259,7 +269,7 @@
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(124, 65);
+            this.txtQuantity.Location = new System.Drawing.Point(124, 82);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(279, 30);
             this.txtQuantity.TabIndex = 14;
@@ -268,7 +278,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(41, 32);
+            this.label3.Location = new System.Drawing.Point(41, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 25);
             this.label3.TabIndex = 13;
@@ -276,14 +286,14 @@
             // 
             // txtRate
             // 
-            this.txtRate.Location = new System.Drawing.Point(124, 29);
+            this.txtRate.Location = new System.Drawing.Point(124, 46);
             this.txtRate.Name = "txtRate";
             this.txtRate.Size = new System.Drawing.Size(279, 30);
             this.txtRate.TabIndex = 0;
             // 
             // btnDollarBuy
             // 
-            this.btnDollarBuy.Location = new System.Drawing.Point(265, 15);
+            this.btnDollarBuy.Location = new System.Drawing.Point(280, 30);
             this.btnDollarBuy.Name = "btnDollarBuy";
             this.btnDollarBuy.Size = new System.Drawing.Size(35, 30);
             this.btnDollarBuy.TabIndex = 9;
@@ -293,7 +303,7 @@
             // 
             // btnDollarSale
             // 
-            this.btnDollarSale.Location = new System.Drawing.Point(265, 51);
+            this.btnDollarSale.Location = new System.Drawing.Point(280, 66);
             this.btnDollarSale.Name = "btnDollarSale";
             this.btnDollarSale.Size = new System.Drawing.Size(35, 30);
             this.btnDollarSale.TabIndex = 10;
@@ -303,7 +313,7 @@
             // 
             // btnEuroSale
             // 
-            this.btnEuroSale.Location = new System.Drawing.Point(265, 151);
+            this.btnEuroSale.Location = new System.Drawing.Point(280, 166);
             this.btnEuroSale.Name = "btnEuroSale";
             this.btnEuroSale.Size = new System.Drawing.Size(35, 30);
             this.btnEuroSale.TabIndex = 12;
@@ -313,7 +323,7 @@
             // 
             // btnEuroBuy
             // 
-            this.btnEuroBuy.Location = new System.Drawing.Point(265, 115);
+            this.btnEuroBuy.Location = new System.Drawing.Point(280, 130);
             this.btnEuroBuy.Name = "btnEuroBuy";
             this.btnEuroBuy.Size = new System.Drawing.Size(35, 30);
             this.btnEuroBuy.TabIndex = 11;
@@ -323,6 +333,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnClear);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label12);
@@ -332,12 +343,42 @@
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Location = new System.Drawing.Point(12, 206);
+            this.groupBox2.Location = new System.Drawing.Point(12, 268);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(345, 272);
+            this.groupBox2.Size = new System.Drawing.Size(345, 210);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kasa";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Location = new System.Drawing.Point(152, 96);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 25);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Euro";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(152, 67);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 25);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "Dolar";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Location = new System.Drawing.Point(152, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 25);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "TL ";
             // 
             // lblEUR
             // 
@@ -399,51 +440,11 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "TL :";
             // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(79, 368);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(324, 38);
-            this.btnClear.TabIndex = 23;
-            this.btnClear.Text = "Kasa Temizle";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(152, 37);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 25);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "TL ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(152, 67);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 25);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Dolar";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(152, 96);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 25);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Euro";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(218, 19);
+            this.label15.Location = new System.Drawing.Point(233, 34);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 25);
             this.label15.TabIndex = 26;
@@ -453,7 +454,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Location = new System.Drawing.Point(218, 56);
+            this.label16.Location = new System.Drawing.Point(233, 71);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 25);
             this.label16.TabIndex = 27;
@@ -463,7 +464,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Location = new System.Drawing.Point(218, 117);
+            this.label17.Location = new System.Drawing.Point(233, 132);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 25);
             this.label17.TabIndex = 28;
@@ -473,11 +474,21 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Location = new System.Drawing.Point(218, 154);
+            this.label18.Location = new System.Drawing.Point(233, 169);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(41, 25);
             this.label18.TabIndex = 29;
             this.label18.Text = "TL ";
+            // 
+            // BtnGetRate
+            // 
+            this.BtnGetRate.Location = new System.Drawing.Point(24, 216);
+            this.BtnGetRate.Name = "BtnGetRate";
+            this.BtnGetRate.Size = new System.Drawing.Size(324, 38);
+            this.BtnGetRate.TabIndex = 24;
+            this.BtnGetRate.Text = "Kur Güncelle";
+            this.BtnGetRate.UseVisualStyleBackColor = true;
+            this.BtnGetRate.Click += new System.EventHandler(this.BtnGetRate_Click);
             // 
             // Form1
             // 
@@ -486,6 +497,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(844, 490);
+            this.Controls.Add(this.BtnGetRate);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -563,6 +575,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button BtnGetRate;
     }
 }
 

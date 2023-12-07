@@ -35,7 +35,7 @@ namespace ExchangeOffice
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void GetRateData()
         {
             string today = "https://tcmb.gov.tr/kurlar/today.xml";
             var xmlDocument = new XmlDocument();
@@ -50,6 +50,11 @@ namespace ExchangeOffice
             lblEuroBuy.Text = euroBuy;
             string euroSale = xmlDocument.SelectSingleNode("Tarih_Date/Currency[@Kod='EUR']/BanknoteSelling").InnerXml;
             lblEuroSale.Text = euroSale;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            GetRateData();
         }
 
         private void btnDollarBuy_Click(object sender, EventArgs e)
@@ -281,6 +286,11 @@ namespace ExchangeOffice
             lblUSD.Text = number.ToString();
             lblEUR.Text = number.ToString();
             lblTL.Text = number.ToString();
+        }
+
+        private void BtnGetRate_Click(object sender, EventArgs e)
+        {
+            GetRateData();
         }
     }
 }
